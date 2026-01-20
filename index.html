@@ -6,7 +6,7 @@
     <title>Undangan Pernikahan</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
     <!-- AUDIO -->
     <audio id="bgMusic" loop>
-        <source src="music.mp3" type="audio/mpeg">
+        <source src="assets/audio/music.mp3" type="audio/mpeg">
     </audio>
 
     <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
@@ -24,7 +24,7 @@
 
     <!-- COVER -->
     <section class="cover">
-        <h1>Angga & Zahra</h1>
+        <h1 id="namaPengantin"></h1>
         <p>Akan melangsungkan pernikahan</p>
         <button onclick="bukaUndangan()">Buka Undangan</button>
     </section>
@@ -37,7 +37,7 @@
     </p>
 
     <h2>Detail Acara</h2>
-    <p>Minggu, 20 Oktober 2026</p>
+    <p id="tanggalAcara"></p>
     <p>Pukul 10.00 WIB</p>
 
     <h2>Menuju Hari Bahagia</h2>
@@ -64,7 +64,7 @@
 
 
     <!-- LOKASI ACARA -->
-    <h2>Lokasi Acara</h2>
+    <h2 id="lokasiAcara"></h2>
 
     <div class="maps">
         <iframe 
@@ -94,6 +94,7 @@
 
 
     <!-- JS -->
-    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
