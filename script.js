@@ -39,7 +39,7 @@ function kirimRSVP() {
     const url = `https://wa.me/${noWA}?text=${encodeURIComponent(pesan)}`;
     window.open(url, '_blank');
 }
-const targetDate = new Date("2026-01-20T11:35:00").getTime();
+const targetDate = new Date("2026-10-20T10:00:00").getTime();
 
 /* COUNTDOWN */
 setInterval(() => {
@@ -56,3 +56,4 @@ setInterval(() => {
     document.getElementById('minutes').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     document.getElementById('seconds').innerText = Math.floor((distance % (1000 * 60)) / 1000);
 }, 1000);
+
