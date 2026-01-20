@@ -56,4 +56,3 @@ setInterval(() => {
     document.getElementById('minutes').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     document.getElementById('seconds').innerText = Math.floor((distance % (1000 * 60)) / 1000);
 }, 1000);
-
