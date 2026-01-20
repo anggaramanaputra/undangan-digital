@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- AUDIO -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
+        🔊
+    </button>
+
+    <!-- COVER -->
+    <section class="cover">
+        <h1>Angga & Zahra</h1>
+        <p>Akan melangsungkan pernikahan</p>
+        <button onclick="bukaUndangan()">Buka Undangan</button>
+    </section>
+
+    <!-- ISI UNDANGAN -->
+    <section class="content" id="content">
+    <p class="tamu">
+        Yth. Bapak/Ibu/Saudara/i<br>
+        <span id="namaTamu"></span>
+    </p>
+
+    <h2>Detail Acara</h2>
+    <p>Minggu, 20 Oktober 2026</p>
+    <p>Pukul 10.00 WIB</p>
+
+    <h2>Menuju Hari Bahagia</h2>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown">
+        <div>
+            <span id="days">0</span>
+            <small>Hari</small>
+        </div>
+        <div>
+            <span id="hours">0</span>
+            <small>Jam</small>
+        </div>
+        <div>
+            <span id="minutes">0</span>
+            <small>Menit</small>
+        </div>
+        <div>
+            <span id="seconds">0</span>
+            <small>Detik</small>
+        </div>
+    </div>
+
+
+    <!-- LOKASI ACARA -->
+    <h2>Lokasi Acara</h2>
+
+    <div class="maps">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57955.18692482509!2d110.46034683249495!3d-7.00257970051847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b54831ad7bf%3A0x1e7ba1dedde1dd1c!2sGumaya%20Tower%20Hotel!5e1!3m2!1sen!2sid!4v1768878720711!5m2!1sen!2sid"
+            width="40%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <a href="https://maps.app.goo.gl/9yDtu3HthiPSa9mq8" target="_blank" class="btn">
+        Petunjuk Arah
+    </a>
+
+    <a href="https://maps.app.goo.gl/9yDtu3HthiPSa9mq8" target="_blank" class="btn">
+        Lihat Lokasi
+    </a>
+
+
+    <button class="btn" onclick="kirimRSVP()">
+    Konfirmasi Kehadiran
+    </button>
+
+</section>
+
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
